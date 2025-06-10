@@ -13,9 +13,12 @@ const img = document.querySelector('#profile img')
 
 //substituir imagem 
 if(html.classList.contains('light')){
-img.setAttribute('src','./assets/avatar-light.png')
+  img.setAttribute('src','./assets/avatar-light.png')
+  img.style.borderRadius = '50%'
 }else{
-img.setAttribute('src','./assets/avatar.png')
+  img.setAttribute('src','./assets/avatar.png')
+  img.style.borderRadius = ''
+  img.style.background = ''
 }
 
 }
